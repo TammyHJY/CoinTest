@@ -1,0 +1,2 @@
+# CoinTest
+.html upload test
