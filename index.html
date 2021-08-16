@@ -1,112 +1,185 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>錢幣收藏</title>
     <link rel="stylesheet" type="text/css" href="default.css" />
     <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
     <style>
-        body{
-            background-color: pink;
-            margin: 0;
-            font-size: 100%;
-            margin: 50px 100px;
-            }
-            /* 載入字體,要把字體放在資料夾裡 */
-        @font-face {
-            src: url('fonts/qfont.otf');
-            font-family: webfont; /* 給他一個代號,改下面使用 */
-            }
-        img{
-            display: block;
-            width: 350px;
-            height: 250px;
-            margin-top: 50px auto; 
-            /* float: left; <figure>是垂直排版,要改水平用float	 */
-            position: absolute;
-        }
-        img:hover{
-                cursor: pointer;
-            }
-        header{
-            font-family: 標楷體;
-        }    
-        p{
-            font-family: webfont;
-            line-height: 26px;
-            text-align:justify;
-            float: left;
-            position: relative;
-            margin-top: 300px;
-            opacity:0.4;
-            /* column-count: 4; */
-            border: 1px solid pink;
-            column-rule: solid 1px #999;
-            
-            
-        }
-        p:hover{
-            opacity: 1;
-        }
-        
-        footer{
-            color: dimgrey;
-            font-family: webfont;
-            text-align: center;
-           
+      body {
+        background-color: pink;
+        margin: 0;
+        font-size: 100%;
+        margin: 50px 100px;
+      }
+      /* 載入字體,要把字體放在資料夾裡 */
+      @font-face {
+        src: url("fonts/qfont.otf");
+        font-family: webfont; /* 給他一個代號,改下面使用 */
+      }
+      img {
+        display: block;
+        width: 350px;
+        height: 250px;
+        margin-top: 50px auto;
+        /* float: left; <figure>是垂直排版,要改水平用float	 */
+        position: absolute;
+      }
+      img:hover {
+        cursor: pointer;
+      }
+      header {
+        font-family: 標楷體;
+      }
+      p {
+        font-family: webfont;
+        line-height: 26px;
+        text-align: justify;
+        float: left;
+        position: relative;
+        margin-top: 300px;
+        opacity: 0.4;
+        /* column-count: 4; */
+        border: 1px solid pink;
+        column-rule: solid 1px #999;
+      }
+      p:hover {
+        opacity: 1;
+      }
 
-        }
-
+      footer {
+        color: dimgrey;
+        font-family: webfont;
+        text-align: center;
+      }
     </style>
-    <script>
-        $(document).ready(function(){
-            var margin = $("#image1").width()/2;
-            var width = $("#image1").width();
-            var height = $("#image1").height();
-            $("#image2").css({width:'0px', height:height+'px', marginLeft:margin+'px', opacity:'0.5'});
-            $("#image1").click(function(){
-                $(this).stop().animate({width:'0px', height:height+'px', marginLeft:margin+'px', opacity:'0.5'}, 500);
-                window.setTimeout(function() {
-                    $("#image2").stop().animate({width:width+'px', height:height+'px', marginLeft:'0px', opacity:'1'}, 500);
-                }, 500);
-            });
-            $("#image2").click(function(){
-                $(this).stop().animate({width:'0px', height:height+'px', marginLeft:margin+'px', opacity:'0.5'}, 500);
-                window.setTimeout(function() {
-                    $("#image1").stop().animate({width:width+'px', height:height+'px', marginLeft:'0px', opacity:'1'}, 500);
-                }, 500);
-            });
-        });
-    </script>
-</head>
+  </head>
 
-<body>
-<header><h1>Coin : 元代跟明代「洪武」 </h1></header>
-<div id="container">
-	
-    <img id="image1" src="coin_images/c1-1.jpg" />
-    <img id="image2" src="coin_images/c1-2.jpg" />
-    <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, cumque? Consectetur temporibus vel nam iure illum excepturi porro est placeat numquam, dignissimos ad optio eum quas dolorem veniam. Pariatur, reprehenderit?
-        At similique modi, saepe soluta delectus commodi assumenda sapiente expedita sequi! Molestiae quo optio voluptates ipsum nobis ratione perspiciatis, quidem, repellat minima expedita maiores quas asperiores alias quae obcaecati culpa.
-        Aliquam, architecto aut? Quod voluptates exercitationem ad repudiandae adipisci necessitatibus, ipsum nobis beatae eaque soluta illum inventore facere temporibus unde neque! Magni rem doloribus accusamus sunt nemo aliquid repellendus aspernatur?
-        Magni excepturi fuga, numquam quis doloremque quasi recusandae. Doloribus itaque commodi autem ut id expedita natus error minus! Quisquam doloribus in iusto ab labore? Nihil aut accusantium minima voluptates quas!
-        Reiciendis consectetur et ducimus libero. Tempore fugiat id nam quam nemo non dolorem, est veniam provident dignissimos ratione quia labore necessitatibus? Ullam sed ipsam quas et sapiente voluptatibus animi. Sit.
-        Voluptates accusamus quod explicabo quisquam a nobis suscipit deleniti soluta tenetur quidem quibusdam atque at, harum earum labore tempore, maxime repellendus id architecto temporibus itaque ipsa! Alias, ipsa. Est, beatae.
-        Perferendis placeat, ratione unde temporibus maxime quas, eos rem sequi molestiae atque repudiandae quae, aliquid vitae iusto sint obcaecati iure aliquam praesentium soluta deserunt labore nulla! Praesentium nemo vel iusto.
-        Porro expedita cumque, eos numquam repudiandae qui suscipit quibusdam corrupti minus deleniti in sapiente nulla et iste reprehenderit cum autem excepturi at harum animi mollitia velit officiis distinctio aut. Nihil.
-        Debitis voluptatem dicta, quidem voluptates dignissimos dolore vel consequatur repellendus et. At reiciendis suscipit harum ea consequatur sit sed ut sunt dicta, repudiandae optio explicabo deleniti sapiente provident eaque consequuntur.
-        Nam tenetur quaerat temporibus dignissimos, magni natus, quibusdam eum commodi alias odit modi nemo? Officia pariatur nobis repellat. Delectus aut voluptatum praesentium eaque dicta? Sit quisquam vero soluta natus veritatis.
-        Eveniet repudiandae unde saepe eligendi, delectus autem aut facilis perspiciatis dolorem! Asperiores debitis aliquam eveniet ratione, temporibus rerum suscipit sapiente, quae, totam laborum nostrum fugit minus fugiat repudiandae sunt architecto!
-        Ab, consectetur distinctio! Explicabo voluptate inventore ex facere iure ipsum, ut nam quaerat natus quisquam. Illum dicta quod cum vitae molestias aut eius dolores perspiciatis nulla blanditiis, eaque culpa laborum.
-        Quam aspernatur saepe molestias, enim labore impedit molestiae minima numquam provident non rerum cupiditate quibusdam fugiat maxime laborum similique, repellat consectetur quas optio, ipsa accusamus! Quia reprehenderit at omnis fuga.
-        Repellendus ipsam quis fugit commodi, voluptate cum eligendi, dolore vitae quos provident non sequi? Iusto esse dignissimos mollitia, aut atque hic. Aliquam, omnis! Officia veritatis qui, soluta fuga repudiandae voluptate!
-        Culpa fugiat, iusto nisi facilis minus est vel exercitationem, debitis molestias earum officiis! Rem, dicta numquam? Eius commodi neque at, eos temporibus doloribus, excepturi, nam amet iste obcaecati minus velit!
-    </p>
-   
-</div>
-<footer>楊基益的收藏</footer>
-</body>
+  <body>
+    <header><h1>Coin : 元代跟明代「洪武」</h1></header>
+    <div id="container">
+      <img id="image1" src="coin_images/c1-1.jpg" />
+      <img id="image2" src="coin_images/c1-2.jpg" />
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, cumque?
+        Consectetur temporibus vel nam iure illum excepturi porro est placeat
+        numquam, dignissimos ad optio eum quas dolorem veniam. Pariatur,
+        reprehenderit? At similique modi, saepe soluta delectus commodi
+        assumenda sapiente expedita sequi! Molestiae quo optio voluptates ipsum
+        nobis ratione perspiciatis, quidem, repellat minima expedita maiores
+        quas asperiores alias quae obcaecati culpa. Aliquam, architecto aut?
+        Quod voluptates exercitationem ad repudiandae adipisci necessitatibus,
+        ipsum nobis beatae eaque soluta illum inventore facere temporibus unde
+        neque! Magni rem doloribus accusamus sunt nemo aliquid repellendus
+        aspernatur? Magni excepturi fuga, numquam quis doloremque quasi
+        recusandae. Doloribus itaque commodi autem ut id expedita natus error
+        minus! Quisquam doloribus in iusto ab labore? Nihil aut accusantium
+        minima voluptates quas! Reiciendis consectetur et ducimus libero.
+        Tempore fugiat id nam quam nemo non dolorem, est veniam provident
+        dignissimos ratione quia labore necessitatibus? Ullam sed ipsam quas et
+        sapiente voluptatibus animi. Sit. Voluptates accusamus quod explicabo
+        quisquam a nobis suscipit deleniti soluta tenetur quidem quibusdam atque
+        at, harum earum labore tempore, maxime repellendus id architecto
+        temporibus itaque ipsa! Alias, ipsa. Est, beatae. Perferendis placeat,
+        ratione unde temporibus maxime quas, eos rem sequi molestiae atque
+        repudiandae quae, aliquid vitae iusto sint obcaecati iure aliquam
+        praesentium soluta deserunt labore nulla! Praesentium nemo vel iusto.
+        Porro expedita cumque, eos numquam repudiandae qui suscipit quibusdam
+        corrupti minus deleniti in sapiente nulla et iste reprehenderit cum
+        autem excepturi at harum animi mollitia velit officiis distinctio aut.
+        Nihil. Debitis voluptatem dicta, quidem voluptates dignissimos dolore
+        vel consequatur repellendus et. At reiciendis suscipit harum ea
+        consequatur sit sed ut sunt dicta, repudiandae optio explicabo deleniti
+        sapiente provident eaque consequuntur. Nam tenetur quaerat temporibus
+        dignissimos, magni natus, quibusdam eum commodi alias odit modi nemo?
+        Officia pariatur nobis repellat. Delectus aut voluptatum praesentium
+        eaque dicta? Sit quisquam vero soluta natus veritatis. Eveniet
+        repudiandae unde saepe eligendi, delectus autem aut facilis perspiciatis
+        dolorem! Asperiores debitis aliquam eveniet ratione, temporibus rerum
+        suscipit sapiente, quae, totam laborum nostrum fugit minus fugiat
+        repudiandae sunt architecto! Ab, consectetur distinctio! Explicabo
+        voluptate inventore ex facere iure ipsum, ut nam quaerat natus quisquam.
+        Illum dicta quod cum vitae molestias aut eius dolores perspiciatis nulla
+        blanditiis, eaque culpa laborum. Quam aspernatur saepe molestias, enim
+        labore impedit molestiae minima numquam provident non rerum cupiditate
+        quibusdam fugiat maxime laborum similique, repellat consectetur quas
+        optio, ipsa accusamus! Quia reprehenderit at omnis fuga. Repellendus
+        ipsam quis fugit commodi, voluptate cum eligendi, dolore vitae quos
+        provident non sequi? Iusto esse dignissimos mollitia, aut atque hic.
+        Aliquam, omnis! Officia veritatis qui, soluta fuga repudiandae
+        voluptate! Culpa fugiat, iusto nisi facilis minus est vel
+        exercitationem, debitis molestias earum officiis! Rem, dicta numquam?
+        Eius commodi neque at, eos temporibus doloribus, excepturi, nam amet
+        iste obcaecati minus velit!
+      </p>
+    </div>
+    <footer>楊基益的收藏</footer>
+    <script>
+      $(document).ready(function () {
+        var margin = $("#image1").width() / 2;
+        var width = $("#image1").width();
+        var height = $("#image1").height();
+        $("#image2").css({
+          width: "0px",
+          height: height + "px",
+          marginLeft: margin + "px",
+          opacity: "0.5",
+        });
+        $("#image1").click(function () {
+          $(this)
+            .stop()
+            .animate(
+              {
+                width: "0px",
+                height: height + "px",
+                marginLeft: margin + "px",
+                opacity: "0.5",
+              },
+              500
+            );
+          window.setTimeout(function () {
+            $("#image2")
+              .stop()
+              .animate(
+                {
+                  width: width + "px",
+                  height: height + "px",
+                  marginLeft: "0px",
+                  opacity: "1",
+                },
+                500
+              );
+          }, 500);
+        });
+        $("#image2").click(function () {
+          $(this)
+            .stop()
+            .animate(
+              {
+                width: "0px",
+                height: height + "px",
+                marginLeft: margin + "px",
+                opacity: "0.5",
+              },
+              500
+            );
+          window.setTimeout(function () {
+            $("#image1")
+              .stop()
+              .animate(
+                {
+                  width: width + "px",
+                  height: height + "px",
+                  marginLeft: "0px",
+                  opacity: "1",
+                },
+                500
+              );
+          }, 500);
+        });
+      });
+    </script>
+  </body>
 </html>
